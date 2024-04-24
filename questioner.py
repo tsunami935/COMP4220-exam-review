@@ -22,6 +22,6 @@ finish = "Y"
 while finish != "N":
     question, answer = random.choice(exam)
     print(question)
-    ans = input("Answer: ").strip()
+    ans = "".join(input("Answer: ").strip().split(','))
     print(f"{'Correct' if ans.lower() == answer.lower() else 'Incorrect'}: {answer}")
     finish = input("Would you like to continue (Y/N)? ").upper()
