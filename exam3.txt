@@ -1,0 +1,75 @@
+A grammar defines the syntax of legal sentences and semantic rules define the meaning, grammar semantic rules
+A language model is defined as a probability distribution describing the likelihood of any string, language model
+The application of naive Bayes to a string of words is called the bag-of-words model, bag-of-words
+We learn the prior probabilities needed for bag-of-words using supervised training on a corpus of text, where each segment of text is labeled with a class, corpus
+The process of dividing a text into a sequence of words is called tokenization, tokenization
+A Markov chain model that considers only the dependence between n adjacent words is an n-gram model, n-gram
+N-gram models work well for spam detection, sentiment analysis, and author attribution, spam detection sentiment analysis author attribution
+Character-level models are well suited for the task of language identification, language identification
+smoothing is the process of reserving some probability for never-seen-before n-grams, smoothing
+The backoff model estimates n-gram counts, but for low or zero counts we refer to (n-1)-grams, backoff
+linear interpolation smoothing is a backoff model that combines trigram, bigram, and unigram models, linear interpolation smoothing
+words can be categorized by their part of speech, also called lexical category or tag, lexical category tag
+One common model for part of speech tagging is the hidden Markov model, hidden Markov
+logistic regression has the ability to overcome some of hidden Markov models' weaknesses, using linear algebra, logistic regression
+generative models learn by a joint probability distribution, P(W,C) where P=probability, W=word, C=category, generative
+A language is the set of sentences that follow a grammar, language grammar
+A grammar that overgenerates produces sentences that are not grammatical, overgenerates
+A grammar that undergenerates rejects valid sentences, undergenerates
+A lexicon is a list of valid words, lexicon
+Parts of speech that change relatively rapidly (years/months) are open classes, open
+Parts of speech that change rarely change or change slowly (centuries) are closed classes, closed
+parsing is the process of analyzing a string of words to uncover its phrase structure according to the rules of grammar, parsing
+A dependency grammar assumes that syntactic structure is formed by binary relations between lexical items, without a need for syntactic constituents, dependency grammar
+unsupervised parsing learns a new grammar based on a given language, unsupervised parsing
+NLP models work better by doing feature selection, which limits them to a subset of the words in the text, feature selection
+skip-gram models count words that are near each other but skip a word (or more) between them, skip-gram
+WordNet is an open-source, hand-curated dictionary by Princeton in machine readable format which has proven useful for many natural language applications, WordNet
+The Penn Treebank is a corpus of over 3M words of text annotated with part-of-speech tags, Penn Treebank
+beam search is an algorithm that chooses the k highest probability intermediary states/outputs at each step, beam search
+Naive Bayes and Hidden Markov models are examples of generative models, generative
+Naive Bayes and Hidden Markov Models are examples of generative models, Naive Bayes Hidden Markov
+Logistic regression is a discriminative model, discriminative
+syntactic categories such as a noun phrase or a verb phrase help to constrain the probable words at each point within a sentence, syntactic categories
+One popular language model based on the idea of hierarchical syntactic structure is called the probabilistic context-free grammar, probabilistic context-free grammar
+parsing can be thought as a search for a valid parse tree whose leaves are the words of the string, search
+The CYK algorithm is a chart parser which uses the Chomsky Normal Form grammar, Chomsky Normal form
+A beam search with b = 1 is called a deterministic parser, deterministic
+A popular deterministic approach is shift-reduce parsing, in which we go through the sentence word by word, choosing at each point whether to push the word onto a stack of constituents, or to reduce the top constituent(s) on the stack according to a grammar rule, shift-reduce
+The inside-outside algorithm learns to estimate the probabilities in a probabilistic context-free grammar from example sentences without trees, inside-outside
+Curriculum learning starts with short (2 word) unambiguous sentences and works its way up to 3, 4, 5… word sentences, Curriculum
+Semisupervised parsing starts with a small number of trees as data to build an initial grammar and then adds a large number of unparsed sentences to improve the grammar, Semisupervised
+A lexicalized PCFG is a type of augmented grammar that allows us to assign probabilities based on properties of the words in a phrase other than just the syntactic categories, lexicalized
+Grammar rules obey the principle of compositional semantics. That is, the semantics of a phrase is a function of the semantics of the subphrases, compositional
+To quantify the grammar is not to define a logical semantic sentence, but rather a quasi-logical form that is then turned into a logical sentence by algorithms outside the parsing process, quasi-logical
+Pragmatics addresses the problem of completing the interpretation by adding context-dependent information about the current situation, Pragmatics
+Indexicals are phrases that refer directly to the current situation, Indexicals
+Complications of real natural language include indexicals, long-distance dependencies, time and tense, and ambiguites, indexicals long-distance dependencies time tense ambiguites
+To aid NLP disambiguation, four different probability models are used: world model, mental model, language model, and acoustic model, world mental language acoustic
+Disambiguation is the process of resolving ambiguity or uncertainty in language, disambiguation
+The world model employs the likelihood that a proposition occurs in the environmental context, world
+The mental model employs the likelihood that the speaker forms the intention of conveying a certain fact to the hearer, mental
+The language model employs the likelihood that a certain string of words will be chosen, language
+The acoustic model employs the likelihood that a particular sequence of sounds will be generated which make sense to the hearer, acoustic
+Natural language tasks include speech recognition, text-to-speech, machine translation, information extraction, information retrieval, and question answering, speech recognition text-to-speech machine translation information extraction information retrieval question answering
+A one-hot vector, assigns a value to every word, could be used to describe every word, one-hot
+A word embedding is a learned mapping of the vocabulary to a lower dimensional vector space, word embedding
+Common word embedding vector dictionaries are Word2Vec, GloVe, and FASTTEXT, Word2Vec GloVe FASTTEXT
+Softmax layers are commonly used in part of speech tagging to yield the output probability over the possible part of speech categories, softmax
+Feedfoward networks in natural language processing may have the problem of asymmetry, asymmetry
+RNNs can do part of speech tagging using bidirectional RNNs, bidirectional
+Using RNNs for sentence-level tasks like sentiment analysis is best done by using average pooling, rather than using a vector at the end of a sentence because doing so ends up favoring words at the end of a sentence and dismissing words at the beginning, average pooling
+RNNs can suffer from the limited context problem which is very similar to the vanishing gradient problem, limited context
+long short-term memory gating units don’t suffer from the problem of imperfectly reproducing a message from one time step to the next, long short-term memory
+Machine translation has the goal of translating a source language to a target language, source target
+Using an RNN in conjunction with an LSTM we can create a neural network architecture called a sequence-to-sequence model that consists of an encoder followed by a decoder, sequence-to-sequence
+sequence-to-sequence suffers from nearby context bias, fixed context size limit, and slower sequential processing, nearby context bias fixed context size limit slower sequential processing
+Attention is a neural network component that can be used to create a "context based summarization" of source sentences into a fixed-dimensional representation, attention
+The process of generating target words from source words is called decoding, decoding
+The transformer architecture uses a self-attention mechanism that can model long-distance context without a sequential dependency, transformer self-attention
+Multiheaded attention can be used to address the problem of too much self-attention. This breaks sentences into pieces and applies the attention model to the pieces. , Multiheaded
+The transformer architecture uses a self-attention mechanism that can model long-distance context without a sequential dependency, transformer
+To capture the ordering of words, a transformer uses a technique called positional embedding, positional embedding
+Common Crawl is a dataset of all the text on the internet, Common Crawl
+Pretraining is a form of transfer learning where a large amount of shared general-domain language data is used to train an initial version of an NLP model that can then be refined on domain specific data, Pretraining
+Contextual representation maps words and context to an embedding vector, Contextual representation

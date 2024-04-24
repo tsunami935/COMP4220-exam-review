@@ -1,0 +1,89 @@
+An agent is learning if it improves its performance after making observations about the world, learning
+A computer observes data, builds a model based on the data, and uses it to build a hypothesis about the world and a piece of software that can solve problems, model hypothesis
+Going from a specific set of observations to a general rule is called induction, induction
+When the output is one of a finite set of values (e.g. sunny/rainy/cloudy) the learning problem is called classification, classification
+When the output is a number (e.g. 0-9 in the HW), the learning problem has the name regression (although the AI author(s) would prefer function approximation or numeric prediction), regression
+In supervised learning the agent observes input-output pairs and learns a function that maps input to output. , supervised learning
+In unsupervised learning the agent learns patterns without any explicit feedback. The most common unsupervised learning task is clustering: detecting useful clusters of input examples. For example, a computer vision system could cluster similar looking objects after looking at millions of images., unsupervised learning clustering
+In reinforcement learning the agent learns from a series of reinforcements: rewards and punishments. The agent decides which actions prior to the reinforcement were most responsible for it and alters its actions in the future. , reinforcement learning
+A training set is made up of input-output pairs, training set
+The ground truth is the true answer we are asking the model to predict, ground truth
+To choose a hypothesis space we can use prior knowledge, or perform exploratory data analysis by examining the dataset with statistical tests and visualizations – histograms, scatter plots, box plots, or whatever seems appropriate, exploratory data analysis
+We say that h generalizes well if it accurately predicts the output of the test set, generalizes
+A bias is the tendency of a predictive hypothesis to deviate from the expected value when averaged over different training sets, bias
+We say that a hypothesis is underfitting when it fails to find a pattern in the data, underfitting
+variance is the amount of change in the hypothesis due to fluctuation in the training data. , variance
+A function is overfitting the data when it pays too much attention to the particular data set it is trained on, and performs poorly on unseen data, overfitting
+A decision tree should start with the " most important attribute ", most important attribute
+We evaluate the performance of a learning algorithm with a learning curve, curve
+The information gain from an attribute test is the expected reduction in entropy, information gain
+pruning eliminates decision nodes that are irrelevant, pruning
+A significance test starts using the null hypothesis - there is no underlying pattern, null hypothesis
+early stopping has the decision tree stop generating nodes when there is no good attribute to split on, early stopping
+The stationary assumption expects all future examples will be like the past, stationary assumption
+a problem is realizable if the hypothesis space contains the function that we are looking for, realizable
+When different sets of examples return different hypotheses this is called variance , which decreases towards zero as training examples increase in a realizable hypothesis space., variance
+The process of explicitly penalizing complex hypotheses is called regularization, regularization
+feature selection discards attributes that appear to be irrelevant, feature selection
+A hypothesis that is consistent after a large set of training examples is probably approximately correct, probably approximately correct
+A learning model that summarizes data with a set of parameters of fixed size (independent of the number of training examples) is called a parametric model., parametric
+A nonparametric model is one that cannot be characterized by a bounded set of parameters. This method retains all of the data points as part of the model., nonparametric
+SVMs can embed the data into a higher-dimensional space using the kernel trick, kernel
+ensemble learning selects a collection of hypotheses and combines their predictions by averaging, voting, or some other means of machine learning, ensemble
+Ensemble methods include bagging, random forests, stacking, and boosting, bagging random forests stacking boosting
+online learning uses a randomized weighted majority algorithm which helps in situations where past results do not necessarily predict the future, online
+The field of weakly supervised learning focuses on using labels that are noisy, imprecise, or supplied by non-experts, weakly supervised
+crowdsourcing uses paid workers or unpaid volunteers operating over the internet, crowdsourcing
+A good practice is to maintain data provenance for all of your data, provenance
+deep learning is a broad family of techniques for machine learning in which the hypotheses take the form of complex algebraic circuits with tunable connection strengths., deep
+The models trained by deep learning methods are often called neural networks, neural networks
+A feedforward network has connections in only one direction. It forms a directed acyclic graph with designated input and output nodes., feedforward
+A recurrent network feeds its intermediate or final outputs back into its own inputs, recurrent
+The universal approximation theorem states that a network with just two layers of computation, the first nonlinear and the second linear, can approximate any continuous function to an arbitrary degree of accuracy, universal approximation
+Deep networks with many layers may suffer from a vanishing gradient. The error signals are extinguished as they are propagated back through the network. Covered later., vanishing gradient
+A convolutional neural network is one that contains spatially local connections, convolutional
+A pattern of weights that is replicated across multiple local regions is called a kernel, kernel
+the process of applying the kernel to the pixels of the image is called convolution, convolution
+The size of the step that the kernel takes across an image is called it’s stride, stride
+A pooling layer in a neural network summarizes a set of adjacent units from the preceding layer with a single value, pooling
+tensors are multidimensional arrays of any dimension, tensors
+a(n) adversarial example is an example where altering a few input values drastically changes the output of a neural network, adversarial
+weight decay consists of adding a penalty to the loss function used to train the neural network., weight decay
+dropout is a technique for introducing noise to a neural network at training time, which forces the model to become more robust, dropout
+recurrent neural networks are distinct from feed forward networks in that they allow cycles in the computation graph, recurrent
+RNNs make a Markov assumption. That is, they assume that the current state is based on a finite set of previous states., Markov assumption
+unsupervised learning takes a training set of unlabeled examples, unsupervised
+Many unsupervised deep learning algorithms are based on the idea of an autoencoder, autoencoder
+A generative adversarial network (GAN) is a pair of networks that combine to form a generative system. It consists of a generator and a discriminator, generator discriminator
+Unsupervised translation trains on many examples of X and many separate examples of Y, but not corresponding (X,Y) pairs, translation
+transfer learning occurs when experience with one learning task helps an agent learn better on another task, transfer
+multitask learning is a form of transfer learning, where we simultaneously train a model on multiple objectives, multitask
+Vision is a perceptual channel that accepts a stimulus and reports some representation of the world, stimulus
+An agent builds a model of the world from an image or images using reconstruction, reconstruction
+recognition is the term for drawing distinctions among objects based on visual and other information, recognition
+Humans are good at ignoring the effects of different colored lights and estimating the color the surface would have under white light. This effect is known as color constancy, constancy
+edges are straight lines or curves in the image plane across which there is a “significant” change in image brightness, edges
+In computational vision texture refers to a (usually regular) pattern on a surface that can be sensed visually, texture
+Whenever there is relative movement between the camera and one or more objects in the scene, the resulting apparent motion in the image is called optical flow, optical flow
+segmentation is the process of breaking an image into groups of similar pixels, segmentation
+Once edges are determined segments can be further generalized into regions, regions
+A network that finds regions with objects is called a regional proposal network , regional proposal
+Any box with a good enough objectness score returned from a regional proposal network is called a region of interest, region of interest
+The process of sampling pixels to extract features is called ROI pooling, ROI pooling
+To figure out which ROI window to report we can use a greedy algorithm called non-maximum suppression, and then choose windows that score over a threshold, non-maximum suppression
+The shifting of one (say left) view to another view (say right) is known as disparity, disparity
+The distance between the eyes or cameras is called the baseline, baseline
+reinforcement learning is when an agent interacts with the world and periodically receives rewards and punishments, reinforcement
+In passive reinforcement learning the agent’s policy is fixed and the task is to learn the utilities of states, or of state-action pairs, passive
+The direct utility estimation is the estimated total reward from that state onward which is called the expected reward-to-go, direct utility estimation reward-to-go
+exploitation is a greedy agent because it greedily takes the action that it currently believes to be optimal at each step, exploitation
+An agent must make a tradeoff between exploitation of the current best action to maximize its short-term reward and exploration of previously unknown states to gain information that can lead to a change in policy, and to greater rewards in the future, exploitation exploration
+Sometimes actions are irreversible, no actions can restore the state to what it was before the action was taken, irreversible
+an absorbing state is where no actions can have any effect and no rewards are received, absorbing
+Q-learning learns an action-utility function instead of a utility function, Q-learning
+In an exploration yielding a negative reward, SARSA penalizes the action, Q-learning does not, SARSA Q-learning
+Q-learning is an off-policy learning algorithm, because it learns Q-values that answer the question “What would this action be worth in this state, assuming that I stop using whatever policy I am using now, and start acting according to a policy that chooses the best action, according to my estimates?”, off-policy
+SARSA is an on-policy algorithm. It learns Q-values that answer the question “What would this action be worth in this state, assuming I stick with my policy?”, on-policy
+reward shaping is used to “encourage” an agent with pseudorewards, reward shaping pseudorewards
+The general field of apprenticeship learning studies the process of learning how to behave well given observations of expert behavior, apprenticeship
+inverse reinforcement learning: learning rewards by observing a policy rather than learning a policy by observing rewards, inverse reinforcement
