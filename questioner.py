@@ -1,8 +1,9 @@
 import random
+import sys
 
 exam = []
 
-with open("exam2.txt", "r", encoding="utf-8") as fin:
+with open(sys.argv[1], "r", encoding="utf-8") as fin:
     for line in fin:
         part = line.strip().split(",")
         ans = part[-1].split(" ")
