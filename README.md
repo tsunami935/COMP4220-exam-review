@@ -12,4 +12,8 @@ do not separate with commas.
 It will mark you wrong if the order of answers is wrong because I'm lazy.
 Don't worry about it.
 
+Question files have the following format:
+- Each line is a separate question.
+- The answer is always after the last comma in each line.
+
 I will add more stuff in the coming days so keep refreshing I guess.
