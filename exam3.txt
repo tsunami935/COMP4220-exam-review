@@ -78,3 +78,24 @@ Symmetry laws are said to be exact laws, or more precisely have never been pro
 The speed of light is the speed of causality, causality
 The double-slit experiment demonstrated the wave nature of light, double-slit
 The photoelectric effect demonstrated the particle nature of light, photoelectric
+Planck showed that physics was no longer continuous, it became discrete or quantum, quantum
+The four forces in order of ascending strength are gravity, weak, electromagnetic, and strong forces, gravity weak electromagnetic strong
+Schrodinger's equation describes the wave function of a quantum system, Schrodinger's equation
+Quantum entanglement is when particles in a group interact in such a way that the state of one particle cannot be described indepently of the others, Quantum entanglement
+The Stern-Gerlach experiment demonstrated that electron spin was quantized and that the state of the spin was in superposition until observed, Stern-Gerlach
+Superposition occurs when a particle is in multiple states at once, Superposition
+The Pauli gates perform a rotation about the axes of the bloch sphere, Pauli
+The Hadamard gate creates turns a base state into a superposition, Hadamard
+The CNOT gate flips a target qubit based on the state of a source qubit, CNOT
+The time to factor a large N is exponential for traditional computing. Shor’s algorithm can use quantum computing to make the time to factor a large N logarithmic, exponential logarithmic
+Machines can act as if they were intelligent are weak AI. Machines that are actually consciously thinking instead of simulating thinking are strong AI, weak strong
+“Artificial intelligence pursued within the cult of computationalism stands not even a ghost of a chance of producing durable results” is a quote by Kenneth Sayre. This is a criticism of Good Old Fashioned AI, Good Old Fashioned AI
+The qualification problem refers to the difficulty of capturing every contingency of appropriate behavior in a set of necessary and sufficient logical rules, qualification
+The embodied cognition approach claims that it makes no sense to consider the brain separately from the body, embodied cognition
+The Turing test is a test of a machine's intelligence by having a well trained human judge try to distinguish the machine from a real person, Turing
+The Chinese room thought experiment is an argument for biological naturalism, i.e. mental states are high-level, the process in the neurons is low-level, Chinese room biological naturalism
+Consciousness is the awareness of the environment, and of self, and the subjective experience of living, Consciousness
+De-identification is used to strip personal data from datasets to preserve privacy of records, De-identification
+A database has k-anonymity if every if every record in the database is indistinguishable from at least k-1 other records, k-anonymity
+Federated learning is a way of training models where each user maintains their own local database, Federated
+ML models can perpetuate societal bias instead of reducing it, bias
