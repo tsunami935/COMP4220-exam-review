@@ -74,7 +74,7 @@ Common Crawl is a dataset of all the text on the internet, Common Crawl
 Pretraining is a form of transfer learning where a large amount of shared general-domain language data is used to train an initial version of an NLP model that can then be refined on domain specific data, Pretraining
 Contextual representation maps words and context to an embedding vector, Contextual representation
 Inconsitencies in early efforts to relate electromagnetic radiation to energy is known as the ultraviolet catastrophe, ultraviolet catastrophe
-Symmetry laws are said to be exact laws, or more precisely have never been proven to be violated, exact
+Symmetry laws are said to be exact laws, or more precisely have never been proven to be violated, exact
 The speed of light is the speed of causality, causality
 The double-slit experiment demonstrated the wave nature of light, double-slit
 The photoelectric effect demonstrated the particle nature of light, photoelectric

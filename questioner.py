@@ -1,7 +1,11 @@
 import random
 import sys
+import time
+
+random.seed(time.time())
 
 exam = []
+used = []
 
 with open(sys.argv[1], "r", encoding="utf-8") as fin:
     for line in fin:
@@ -16,11 +20,16 @@ with open(sys.argv[1], "r", encoding="utf-8") as fin:
                     break
         question = " ".join(question).strip()
         ans = " ".join(ans).strip()
-        exam.append((question, ans))
+        used.append((question, ans))
 
 finish = "Y"
 while finish != "N":
-    question, answer = random.choice(exam)
+    if len(exam) == 0:
+        exam = used
+        random.shuffle(exam)
+        used = []
+    question, answer = exam.pop()
+    used.append((question, answer))
     print(question)
     ans = "".join(input("Answer: ").strip().split(','))
     print(f"{'Correct' if ans.lower() == answer.lower() else 'Incorrect'}: {answer}")
