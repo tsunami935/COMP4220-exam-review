@@ -52,10 +52,10 @@ The mental model employs the likelihood that the speaker forms the intention of 
 The language model employs the likelihood that a certain string of words will be chosen, language
 The acoustic model employs the likelihood that a particular sequence of sounds will be generated which make sense to the hearer, acoustic
 Natural language tasks include speech recognition, text-to-speech, machine translation, information extraction, information retrieval, and question answering, speech recognition text-to-speech machine translation information extraction information retrieval question answering
-A one-hot vector, assigns a value to every word, could be used to describe every word, one-hot
+A one-hot vector, assigns a value to every word and could be used to describe every word, one-hot
 A word embedding is a learned mapping of the vocabulary to a lower dimensional vector space, word embedding
 Common word embedding vector dictionaries are Word2Vec, GloVe, and FASTTEXT, Word2Vec GloVe FASTTEXT
-Softmax layers are commonly used in part of speech tagging to yield the output probability over the possible part of speech categories, softmax
+Softmax layers are commonly used in part of speech tagging to yield the output probability over the possible part of speech categories, Softmax
 Feedfoward networks in natural language processing may have the problem of asymmetry, asymmetry
 RNNs can do part of speech tagging using bidirectional RNNs, bidirectional
 Using RNNs for sentence-level tasks like sentiment analysis is best done by using average pooling, rather than using a vector at the end of a sentence because doing so ends up favoring words at the end of a sentence and dismissing words at the beginning, average pooling
@@ -67,7 +67,7 @@ sequence-to-sequence suffers from nearby context bias, fixed context size limit,
 Attention is a neural network component that can be used to create a "context based summarization" of source sentences into a fixed-dimensional representation, attention
 The process of generating target words from source words is called decoding, decoding
 The transformer architecture uses a self-attention mechanism that can model long-distance context without a sequential dependency, transformer self-attention
-Multiheaded attention can be used to address the problem of too much self-attention. This breaks sentences into pieces and applies the attention model to the pieces. , Multiheaded
+Multiheaded attention can be used to address the problem of too much self-attention. This breaks sentences into pieces and applies the attention model to the pieces., Multiheaded
 The transformer architecture uses a self-attention mechanism that can model long-distance context without a sequential dependency, transformer
 To capture the ordering of words, a transformer uses a technique called positional embedding, positional embedding
 Common Crawl is a dataset of all the text on the internet, Common Crawl

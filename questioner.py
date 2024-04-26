@@ -10,15 +10,15 @@ used = []
 with open(sys.argv[1], "r", encoding="utf-8") as fin:
     for line in fin:
         part = line.strip().split(",")
-        ans = part[-1].split(" ")
+        ans = [a.strip() for a in part[-1].split(" ")]
         part.pop(-1)
         question = ",".join(part).split(" ")
         for i in range(len(question)):
             for a in ans:
-                if question[i] == a:
+                if question[i].strip() == a:
                     question[i] = "___"
                     break
-        question = " ".join(question).strip()
+        question = " ".join(question)
         ans = " ".join(ans).strip()
         used.append((question, ans))
 
@@ -29,8 +29,13 @@ while finish != "N":
         random.shuffle(exam)
         used = []
     question, answer = exam.pop()
-    used.append((question, answer))
     print(question)
     ans = "".join(input("Answer: ").strip().split(','))
-    print(f"{'Correct' if ans.lower() == answer.lower() else 'Incorrect'}: {answer}")
+    correct = ans.lower() == answer.lower()
+    if correct:
+        used.append((question, answer))
+    else:
+        exam.append((question, answer))
+        random.shuffle(exam)
+    print(f"{'Correct' if correct else 'Incorrect'}: {answer}")
     finish = input("Would you like to continue (Y/N)? ").upper()
