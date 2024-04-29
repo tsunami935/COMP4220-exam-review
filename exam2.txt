@@ -4,7 +4,7 @@ Going from a specific set of observations to a general rule is called induction,
 When the output is one of a finite set of values (e.g. sunny/rainy/cloudy) the learning problem is called classification, classification
 When the output is a number (e.g. 0-9 in the HW), the learning problem has the name regression (although the AI author(s) would prefer function approximation or numeric prediction), regression
 In supervised learning the agent observes input-output pairs and learns a function that maps input to output. , supervised learning
-In unsupervised learning the agent learns patterns without any explicit feedback. The most common unsupervised learning task is clustering: detecting useful clusters of input examples. For example, a computer vision system could cluster similar looking objects after looking at millions of images., unsupervised learning clustering
+In unsupervised learning the agent learns patterns without any explicit feedback. The most common task is clustering : detecting useful clusters of input examples. For example, a computer vision system could cluster similar looking objects after looking at millions of images., unsupervised learning clustering
 In reinforcement learning the agent learns from a series of reinforcements: rewards and punishments. The agent decides which actions prior to the reinforcement were most responsible for it and alters its actions in the future. , reinforcement learning
 A training set is made up of input-output pairs, training set
 The ground truth is the true answer we are asking the model to predict, ground truth
@@ -51,7 +51,7 @@ a(n) adversarial example is an example where altering a few input values drastic
 weight decay consists of adding a penalty to the loss function used to train the neural network., weight decay
 dropout is a technique for introducing noise to a neural network at training time, which forces the model to become more robust, dropout
 recurrent neural networks are distinct from feed forward networks in that they allow cycles in the computation graph, recurrent
-RNNs make a Markov assumption. That is, they assume that the current state is based on a finite set of previous states., Markov assumption
+RNNs make a Markov assumption . That is, they assume that the current state is based on a finite set of previous states., Markov assumption
 unsupervised learning takes a training set of unlabeled examples, unsupervised
 Many unsupervised deep learning algorithms are based on the idea of an autoencoder, autoencoder
 A generative adversarial network (GAN) is a pair of networks that combine to form a generative system. It consists of a generator and a discriminator, generator discriminator

@@ -14,7 +14,7 @@ One common model for part of speech tagging is the hidden Markov model, hidden M
 logistic regression has the ability to overcome some of hidden Markov models' weaknesses, using linear algebra, logistic regression
 generative models learn by a joint probability distribution, P(W,C) where P=probability, W=word, C=category, generative
 A language is the set of sentences that follow a grammar, language grammar
-A grammar that overgenerates produces sentences that are not grammatical, overgenerates
+A grammar that overgenerates produces sentences that are not grammatically correct, overgenerates
 A grammar that undergenerates rejects valid sentences, undergenerates
 A lexicon is a list of valid words, lexicon
 Parts of speech that change relatively rapidly (years/months) are open classes, open
@@ -33,7 +33,7 @@ Logistic regression is a discriminative model, discriminative
 syntactic categories such as a noun phrase or a verb phrase help to constrain the probable words at each point within a sentence, syntactic categories
 One popular language model based on the idea of hierarchical syntactic structure is called the probabilistic context-free grammar, probabilistic context-free grammar
 parsing can be thought as a search for a valid parse tree whose leaves are the words of the string, search
-The CYK algorithm is a chart parser which uses the Chomsky Normal Form grammar, Chomsky Normal form
+The CYK algorithm is a chart parser which uses the Chomsky Normal Form grammar, Chomsky Normal Form
 A beam search with b = 1 is called a deterministic parser, deterministic
 A popular deterministic approach is shift-reduce parsing, in which we go through the sentence word by word, choosing at each point whether to push the word onto a stack of constituents, or to reduce the top constituent(s) on the stack according to a grammar rule, shift-reduce
 The inside-outside algorithm learns to estimate the probabilities in a probabilistic context-free grammar from example sentences without trees, inside-outside
