@@ -40,7 +40,7 @@ The models trained by deep learning methods are often called neural networks, ne
 A feedforward network has connections in only one direction. It forms a directed acyclic graph with designated input and output nodes., feedforward
 A recurrent network feeds its intermediate or final outputs back into its own inputs, recurrent
 The universal approximation theorem states that a network with just two layers of computation, the first nonlinear and the second linear, can approximate any continuous function to an arbitrary degree of accuracy, universal approximation
-Deep networks with many layers may suffer from a vanishing gradient. The error signals are extinguished as they are propagated back through the network. Covered later., vanishing gradient
+Deep networks with many layers may suffer from a vanishing gradient . The error signals are extinguished as they are propagated back through the network. Covered later., vanishing gradient
 A convolutional neural network is one that contains spatially local connections, convolutional
 A pattern of weights that is replicated across multiple local regions is called a kernel, kernel
 the process of applying the kernel to the pixels of the image is called convolution, convolution

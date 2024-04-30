@@ -46,7 +46,7 @@ Pragmatics addresses the problem of completing the interpretation by adding cont
 Indexicals are phrases that refer directly to the current situation, Indexicals
 Complications of real natural language include indexicals, long-distance dependencies, time and tense, and ambiguites, indexicals long-distance dependencies time tense ambiguites
 To aid NLP disambiguation, four different probability models are used: world model, mental model, language model, and acoustic model, world mental language acoustic
-Disambiguation is the process of resolving ambiguity or uncertainty in language, disambiguation
+Disambiguation is the process of resolving ambiguity or uncertainty in language, Disambiguation
 The world model employs the likelihood that a proposition occurs in the environmental context, world
 The mental model employs the likelihood that the speaker forms the intention of conveying a certain fact to the hearer, mental
 The language model employs the likelihood that a certain string of words will be chosen, language
@@ -64,7 +64,7 @@ long short-term memory gating units don’t suffer from the problem of imperfect
 Machine translation has the goal of translating a source language to a target language, source target
 Using an RNN in conjunction with an LSTM we can create a neural network architecture called a sequence-to-sequence model that consists of an encoder followed by a decoder, sequence-to-sequence
 sequence-to-sequence suffers from nearby context bias, fixed context size limit, and slower sequential processing, nearby context bias fixed context size limit slower sequential processing
-Attention is a neural network component that can be used to create a "context based summarization" of source sentences into a fixed-dimensional representation, attention
+Attention is a neural network component that can be used to create a "context based summarization" of source sentences into a fixed-dimensional representation, Attention
 The process of generating target words from source words is called decoding, decoding
 The transformer architecture uses a self-attention mechanism that can model long-distance context without a sequential dependency, transformer self-attention
 Multiheaded attention can be used to address the problem of too much self-attention. This breaks sentences into pieces and applies the attention model to the pieces., Multiheaded
